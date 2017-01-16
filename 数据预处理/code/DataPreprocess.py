@@ -4,8 +4,8 @@ Created on Tue Jan  3 17:24:06 2017
 
 @author: Administrator
 """
-file_task='C:/Users/Administrator/Desktop/标签体系/数据预处理/tasks_myy.xlsx'
-file_labels='C:/Users/Administrator/Desktop/标签体系/数据预处理/labels.xlsx'
+file_task='../taskFiles/tasks_myy.xlsx'
+file_labels='../taskFiles/labels.xlsx'
 import pandas as pd
 #from pandas import Series,DataFrame
 FrameTask=pd.read_excel(file_task)

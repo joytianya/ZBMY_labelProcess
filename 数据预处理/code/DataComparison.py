@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 from pandas import DataFrame
 import os
-rootDir='C:/Users/Administrator/Desktop/标签体系/数据预处理/taskFiles'
+rootDir='../taskFiles'
 list_dirs=os.walk(rootDir)
 flag=0
 for root,dirs,files in list_dirs:
@@ -51,8 +51,8 @@ for root,dirs,files in list_dirs:
             #np.savetxt('C:/Users/Administrator/Desktop/标签体系/数据预处理/dataComparison.csv',Frame,fmt='%s',delimiter=',')
 #            print ("不同个数:",len(Frame))
             if flag==0:
-                Frame.to_csv('C:/Users/Administrator/Desktop/标签体系/数据预处理/ProcessResult/dataComparison.csv', index=False,mode='w')
+                Frame.to_csv('../ProcessResult/dataComparison.csv', index=False,mode='w')
                 flag=1
             else:
-                Frame.to_csv('C:/Users/Administrator/Desktop/标签体系/数据预处理/ProcessResult/dataComparison.csv', index=False,mode='a',header=False)
+                Frame.to_csv('../ProcessResult/dataComparison.csv', index=False,mode='a',header=False)
             #print ("different data:",FrameTaskNotNullHow_0['场景'].loc[DiffDataIndex],FrameTaskNotNullHow_1['场景'].loc[DiffDataIndex])

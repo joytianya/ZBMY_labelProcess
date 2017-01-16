@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from pandas import DataFrame
 import os
-rootDir='/home/xuanwei/job/标签体系/数据预处理/taskFiles'
+rootDir='../taskFiles'
 list_dirs=os.walk(rootDir)
 flag=0
 #for root,dirs,files in list_dirs:
@@ -23,4 +23,4 @@ for lists in os.listdir(rootDir):
 	else:
 		FrameMerge['场景_%s'%presonName]=FrameTask['场景'].copy()
 		FrameMerge['行业_%s'%presonName]=FrameTask['行业'].copy()
-	FrameMerge.to_csv('/home/xuanwei/job/标签体系/数据预处理/ProcessResult/dataMerge.csv', index=False,mode='w')
+	FrameMerge.to_csv('../ProcessResult/dataMerge.csv', index=False,mode='w')
